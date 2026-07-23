@@ -1,18 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta
+        name="description"
+        content="문제를 이해하고 쓸모 있는 제품을 만드는 개발자 YDH의 포트폴리오"
+    >
+    <title>YDH | Developer Portfolio</title>
 </head>
 <body>
-    <h1>Hello world - YDH</h1>
-    <ul>
-        <li>내용 목록 1</li>
-        <li>내용 목록 2</li>
-        <li>내용 목록 3</li>
-        <li>내용 목록 4</li>
-        <li>내용 목록 5</li>
-    </ul>
+    <header class="site-header">
+        <nav class="container nav">
+            <a class="brand" href="#top">YDH.</a>
+            <ul class="nav-links">
+                <li><a href="#about">소개</a></li>
+                <li><a href="#skills">기술</a></li>
+                <li><a href="#projects">프로젝트</a></li>
+                <li><a href="#contact">연락처</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero container">
+            <p class="eyebrow">Software Developer</p>
+            <h1>문제를 이해하고,<br>쓸모 있는 제품으로 만듭니다.</h1>
+            <p class="hero-description">
+                사용자 경험과 견고한 구현을 함께 고민하며,
+                배운 것을 실제 결과물로 연결하는 개발자 YDH입니다.
+            </p>
+            <div class="hero-actions">
+                <a class="button button-primary" href="#projects">프로젝트 보기</a>
+                <a
+                    class="button button-secondary"
+                    href="https://github.com/dh610"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    GitHub
+                </a>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="container section-grid">
+                <div>
+                    <p class="section-kicker">01 · About</p>
+                    <h2>좋은 질문에서<br>개발을 시작합니다.</h2>
+                </div>
+                <div class="section-copy">
+                    <p>
+                        기능을 구현하기 전에 누구의 어떤 문제를 해결하는지 먼저 생각합니다.
+                        읽기 쉬운 코드와 자연스러운 사용자 경험을 함께 만드는 것이 목표입니다.
+                    </p>
+                    <p>
+                        현재는 웹의 기본기를 단단히 다지는 동시에,
+                        다양한 프로젝트를 통해 제품 개발의 전체 흐름을 배우고 있습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-muted" id="skills">
+            <div class="container">
+                <p class="section-kicker">02 · Skills</p>
+                <h2>현재 다루는 기술</h2>
+                <ul class="skill-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="section-kicker">03 · Projects</p>
+                        <h2>선택한 프로젝트</h2>
+                    </div>
+                    <p>문제를 발견하고 결과물로 완성한 과정을 소개합니다.</p>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-number">01</div>
+                        <div>
+                            <p class="project-type">Web · Portfolio</p>
+                            <h3>개인 개발자 포트폴리오</h3>
+                            <p>
+                                별도 빌드 없이 GitHub Pages에서 동작하는
+                                반응형 원페이지 포트폴리오입니다.
+                            </p>
+                            <ul class="project-tags">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>GitHub Pages</li>
+                            </ul>
+                        </div>
+                        <a
+                            class="project-link"
+                            href="https://github.com/dh610/skala-html-260723"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            저장소 보기 <span aria-hidden="true">↗</span>
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-number">02</div>
+                        <div>
+                            <p class="project-type">Next · Project</p>
+                            <h3>다음 프로젝트</h3>
+                            <p>
+                                새로운 문제를 해결한 프로젝트가 완성되면
+                                목적, 기여, 기술과 함께 이곳에 소개합니다.
+                            </p>
+                            <ul class="project-tags">
+                                <li>Planning</li>
+                                <li>Development</li>
+                            </ul>
+                        </div>
+                        <span class="project-status">준비 중</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <div class="container contact-inner">
+                <div>
+                    <p class="section-kicker">04 · Contact</p>
+                    <h2>함께 이야기해요.</h2>
+                    <p>새로운 기회와 개발 이야기를 언제든 환영합니다.</p>
+                </div>
+                <a
+                    class="button button-primary"
+                    href="https://github.com/dh610"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    GitHub에서 연락하기
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2026 YDH</p>
+            <a href="#top">맨 위로</a>
+        </div>
+    </footer>
 </body>
 </html>
